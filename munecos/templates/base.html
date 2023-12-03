@@ -1,0 +1,32 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block title %}{% endblock %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="{% static '/css/main.css' %}" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-titulo navbar-elemento" href="/">Lupop</a>
+        <ul class="navbar-links">
+            <a class="navbar-links-item" href="/munecos/">Muñecos</a>
+            <a class="navbar-links-item" href="/ropa/">Ropa</a>
+            <a class="navbar-links-item" href="/mini_mi/">Mini-Mi</a>
+            <a class="navbar-links-item" href="/desde_cero/">Desde cero</a>
+        </ul>
+        <a class="navbar-usuario navbar-elemento" href="/inicio_sesion/">Usuario</a>
+    </nav>
+
+    <div class="">
+        {% block body %}
+        {% endblock %}
+    </div>
+</body>
+</html>

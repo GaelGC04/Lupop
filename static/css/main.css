@@ -1,0 +1,147 @@
+/* INICIO de configuraciones generales */
+:root {
+    /* Se definen variables de colores */
+    --color-nav-bar: rgb(44,41,41);
+    --color-durazno: rgb(252, 220, 212);
+    --color-polvo-azul: rgb(196, 212, 212);
+    --color-grafito: rgb(67, 65, 78);
+
+    --color-blanco: rgb(255,255,255);
+    --color-rojo: rgb(211,110,92);
+    --color-rojo-opaco: rgb(140, 73, 61);
+    --color-gris: rgb(47,38,39);
+    --color-gris-opaco: rgb(38, 26, 27);
+
+    /* Se definen variables tamanos */
+    --altura-nav-bar: 4rem;
+    --altura-main-secciones: 2.6rem;
+    --tamano-letra: 1rem;
+}
+
+/* Estilos de scrollbar */
+::-webkit-scrollbar {
+    /* Ancho de la barra */
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--color-durazno);
+}
+::-webkit-scrollbar-thumb {
+    /* Estilo del handle */
+    background-color: var(--color-rojo);
+    border-radius: 2px;
+}
+/* Estilo al hacer hover */
+::-webkit-scrollbar-track:hover {
+    background-color: var(--color-gris);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-rojo-opaco);
+}
+
+body{
+    /* Ajustes generales de body */
+    margin: 0;
+    background-color: var(--color-blanco);
+    font-family: 'Roboto', sans-serif;
+    height: calc(100%);
+    margin-bottom: calc(var(--altura-nav-bar));
+}
+
+a{
+    /* Ajustes generales de links */
+    text-decoration: none;
+    color: var(--color-negro);
+    transition: 200ms;
+}
+a:hover{
+    /* Comportamiento de links con hover */
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 200ms;
+}
+/* FIN de configuraciones generales */
+
+
+
+
+
+/* INICIO de configuraciones de navbar */
+
+/* Configuraciones de navbar */
+.navbar{
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: var(--altura-nav-bar);
+    
+    background-color: var(--color-polvo-azul);
+    color: var(--color-grafito);
+}
+
+.navbar-elemento{
+    padding: 0 2rem;
+    width: fit-content;
+}
+
+.navbar-titulo{
+    font-size: calc(var(--tamano-letra) * 2);
+    height: var(--altura-nav-bar);
+    line-height: var(--altura-nav-bar);
+}
+.navbar-titulo:hover{
+    color: var(--color-durazno);
+}
+
+.navbar-links{
+    display: flex;
+    flex-wrap: nowrap;
+    
+    height: var(--altura-nav-bar);
+    line-height: var(--altura-nav-bar);
+}
+
+.navbar-links-item{
+    list-style-type: none;
+
+    font-size: var(--tamano-letra);
+    
+    width: fit-content;
+    height: var(--altura-nav-bar);
+    
+    line-height: var(--altura-nav-bar);
+    padding: 0 1rem;
+}
+.navbar-links-item:hover{
+    color: var(--color-durazno);
+}
+
+.navbar-usuario{
+    font-size: calc(var(--tamano-letra) * 1.5);
+    height: var(--altura-nav-bar);
+    line-height: var(--altura-nav-bar);
+}
+.navbar-usuario:hover{
+    color: var(--color-durazno);
+}
+
+/* FIN de configuraciones de navbar */
+
+
+
+
+
+/* INICIO diseño responsive navbar */
+
+@media screen and (max-width: 710px) {
+    .navbar-links{
+        display: none;
+    }
+}
+
+/* FIN diseño responsive navbar */
