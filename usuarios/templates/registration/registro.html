@@ -1,0 +1,33 @@
+{% extends "../base.html" %}
+{% block title %}
+<title>Registro</title>
+{% endblock %}
+
+{% block body %}
+<div class="marco-form">
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.username.label_tag }}
+        {{ form.username }}
+        {{ form.last_name.label_tag }}
+        {{ form.last_name }}
+        {{ form.email.label_tag }}
+        {{ form.email }}
+        {{ form.phone_number.label_tag }}
+        {{ form.phone_number }}
+        {{ form.password1.label_tag }}
+        {{ form.password1 }}
+        {{ form.password2.label_tag }}
+        {{ form.password2 }}
+        <button type="submit" class="btn btn-primary">Registrarse</button>
+    </form>
+
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "../base.html" %}
+{% block title %}
+<title>Info {{ user.username }}</title>
+{% endblock %}
+
+
+{% block body %}
+<h2>Información de {{ user.username }}</h2>
+  <p><strong>Nombre:</strong> {{ user.username }} {{ user.last_name }}</p>
+  <p><strong>Correo Electrónico:</strong> {{ user.email }}</p>
+  <p><strong>Número de Teléfono:</strong> {{ user.phone_number }}</p>
+  <br>
+  <a href="{% url 'logout' %}">Logout</a>
+{% endblock %}

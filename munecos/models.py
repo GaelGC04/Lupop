@@ -1,6 +1,6 @@
+from django.conf import settings
 from django.db import models
-from django.contrib.auth.models import User
-
+from django.contrib.auth.models import AbstractUser
 
 class Tamano(models.Model):
     altura = models.FloatField()
@@ -37,7 +37,7 @@ class Muneco(models.Model):
 
 class Opinion(models.Model):
     muneco = models.ForeignKey(Muneco, on_delete=models.CASCADE, related_name='opiniones')
-    usuario = models.ForeignKey(User, on_delete=models.CASCADE)
+    usuario = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     comentario = models.TextField()
     estrellas = models.PositiveIntegerField(default=0, blank=True)
 

@@ -16,10 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from munecos import urls as munecos_urls
+from core import urls as home_urls
+from usuarios import urls as usuarios_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('', include(munecos_urls)),
+    path('', include(home_urls)),
+    path('', include(usuarios_urls)),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
