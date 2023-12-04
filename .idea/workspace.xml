@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f734228-c6e5-409d-8076-df90c82edcf6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/templates/munecos.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usuarios/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usuarios/templates/registration/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usuarios/templates/registration/registro.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usuarios/templates/registration/usuario_info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usuarios/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lupop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lupop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lupop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lupop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lupop.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/munecos/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/munecos/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/managers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/munecos/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/munecos/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/munecos/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/munecos/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/munecos/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/munecos/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
-    </list>
+    <list default="true" id="0f734228-c6e5-409d-8076-df90c82edcf6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
