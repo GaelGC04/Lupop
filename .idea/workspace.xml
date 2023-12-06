@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f734228-c6e5-409d-8076-df90c82edcf6" name="Changes" comment="" />
+    <list default="true" id="0f734228-c6e5-409d-8076-df90c82edcf6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lupop.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/migrations/0002_alter_user_first_name_alter_user_last_name.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/templates/registration/registro.html" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/templates/registration/registro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/templates/registration/usuario_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/templates/registration/usuario_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,16 +50,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "temp-branch",
-    "last_opened_file_path": "/home/gael/Documentos/Trabajos/LUPOP/Lupop/usuarios",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;temp-branch2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/gael/Documentos/Trabajos/LUPOP/Lupop/usuarios&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/usuarios" />
@@ -53,11 +69,11 @@
       <recent name="$PROJECT_DIR$/inicio" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/usuarios/templates/registration" />
       <recent name="$PROJECT_DIR$/usuarios/templates" />
       <recent name="$PROJECT_DIR$/usuarios" />
       <recent name="$PROJECT_DIR$/core/templates/registration" />
       <recent name="$PROJECT_DIR$/core" />
-      <recent name="$PROJECT_DIR$/inicio" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

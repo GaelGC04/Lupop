@@ -3,6 +3,7 @@ from django.contrib.auth import login, logout, authenticate
 from django.shortcuts import render, redirect
 from .forms import RegistrationForm, LoginForm
 
+
 def registro(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)

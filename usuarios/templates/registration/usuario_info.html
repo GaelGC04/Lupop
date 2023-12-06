@@ -1,14 +1,19 @@
 {% extends "../base.html" %}
 {% block title %}
-<title>Info {{ user.username }}</title>
+<title>Cuenta: {{ user.username }}</title>
 {% endblock %}
-
-
 {% block body %}
-<h2>Información de {{ user.username }}</h2>
-  <p><strong>Nombre:</strong> {{ user.username }} {{ user.last_name }}</p>
-  <p><strong>Correo Electrónico:</strong> {{ user.email }}</p>
-  <p><strong>Número de Teléfono:</strong> {{ user.phone_number }}</p>
-  <br>
-  <a href="{% url 'logout' %}">Logout</a>
+<div class="contenido">
+    <aside class="aside-izquierdo-info-usuario">
+        <a href="{% url 'usuario_info' %}" class="aside-izquierdo-info-usuario-link">Información de usuario</a>
+        <a class="aside-izquierdo-info-usuario-link">Editar datos</a>
+        <a href="{% url 'logout' %}" class="aside-izquierdo-info-usuario-link">Cerrar sesión</a>
+    </aside>
+    <div class="articulo-info-usuario">
+        <h2>¡¡Hola {{ user.username }}!!</h2>
+        <p><strong>Nombre:</strong> {{ user.username }} {{ user.last_name }}</p>
+        <p><strong>Correo Electrónico:</strong> {{ user.email }}</p>
+        <p><strong>Número de Teléfono:</strong> {{ user.phone_number }}</p>
+    </div>
+</div>
 {% endblock %}

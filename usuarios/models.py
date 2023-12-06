@@ -8,4 +8,4 @@ class User(AbstractUser):
     last_name = models.CharField(_('last name'), max_length=30, blank=False, null=False)
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['last_name', 'phone_number']
+    REQUIRED_FIELDS = ['username', 'last_name', 'phone_number']

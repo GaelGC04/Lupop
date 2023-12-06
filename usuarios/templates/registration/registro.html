@@ -4,23 +4,61 @@
 {% endblock %}
 
 {% block body %}
-<div class="marco-form">
-    <form action="" method="post">
-        {% csrf_token %}
-        {{ form.username.label_tag }}
-        {{ form.username }}
-        {{ form.last_name.label_tag }}
-        {{ form.last_name }}
-        {{ form.email.label_tag }}
-        {{ form.email }}
-        {{ form.phone_number.label_tag }}
-        {{ form.phone_number }}
-        {{ form.password1.label_tag }}
-        {{ form.password1 }}
-        {{ form.password2.label_tag }}
-        {{ form.password2 }}
-        <button type="submit" class="btn btn-primary">Registrarse</button>
-    </form>
+<div class="contenido contenido-registro">
+    <div class="marco-form">
+        <form class="form-container" action="" method="post">
+            {% csrf_token %}
+            <p class="form-titulo form-elemento">REGISTRO</p>
+            <div class="form-campos">
+                <div class="form-elemento">
+                    {{ form.username.label_tag }}
+                </div>
+                <div class="form-elemento">
+                    {{ form.username }}
+                </div>
+            </div>
+            <div class="form-campos">
+                <div class="form-elemento">
+                    {{ form.last_name.label_tag }}
+                </div>
+                <div class="form-elemento">
+                    {{ form.last_name }}
+                </div>
+            </div>
+            <div class="form-campos">
+                <div class="form-elemento">
+                    {{ form.email.label_tag }}
+                </div>
+                <div class="form-elemento">
+                    {{ form.email }}
+                </div>
+            </div>
+            <div class="form-campos">
+                <div class="form-elemento">
+                    <label for="id_phone_number">Número de teléfono:</label>
+                </div>
+                <div class="form-elemento">
+                    {{ form.phone_number }}
+                </div>
+            </div>
+            <div class="form-campos">
+                <div class="form-elemento">
+                    {{ form.password1.label_tag }}
+                </div>
+                <div class="form-elemento">
+                    {{ form.password1 }}
+                </div>
+            </div>
+            <div class="form-campos">
+                <div class="form-elemento">
+                    {{ form.password2.label_tag }}
+                </div>
+                <div class="form-elemento">
+                    {{ form.password2 }}
+                </div>
+            </div>
+            <button type="submit" class="boton">Registrarse</button>
+        </form>
 
     {% if messages %}
         <ul class="messages">
@@ -29,5 +67,6 @@
             {% endfor %}
         </ul>
     {% endif %}
+    </div>
 </div>
 {% endblock %}

@@ -5,24 +5,39 @@
 {% endblock %}
 
 {% block body %}
-<div class="marco-form">
-    <form method="post">
-        {% csrf_token %}
-        {{ form.username.label_tag }}
-        {{ form.username }}
-        {{ form.password.label_tag }}
-        {{ form.password }}
-        <button type="submit">Iniciar Sesión</button>
-    </form>
-    <a href="{% url 'registro' %}">Registrarse</a>
+<div class="contenido contenido-login">
+    <div class="marco-form">
+        <form class="form-container" method="post" action="">
+            {% csrf_token %}
+            <p class="form-titulo form-elemento">LOGIN</p>
+            <div class="form-campos">
+                <div class="form-elemento">
+                    <label for="id_username">Dirección de correo electrónico:</label>
+                </div>
+                <div class="form-elemento">
+                    <input class="form-input" placeholder="Dirección de correo electrónico" type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username" maxlength="254" required="" id="id_username">
+                </div>
+            </div>
+            <div class="form-campos">
+                <div class="form-elemento">
+                    <label for="id_password">Contraseña:</label>
+                </div>
+                <div class="form-elemento">
+                    <input class="form-input" placeholder="Contraseña" type="password" name="password" autocomplete="current-password" required="" id="id_password">
+                </div>
+            </div>
+            <button type="submit" class="boton">Iniciar Sesión</button>
+        </form>
+        <b><a class="texto-registro" href="{% url 'registro' %}">¿No tienes una cuenta?<br>Registrate</a></b>
+        </p>
 
-    {% if messages %}
-        <ul class="messages">
-            {% for message in messages %}
-                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
 </div>
-
 {% endblock %}
